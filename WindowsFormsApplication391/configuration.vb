@@ -7,6 +7,8 @@ Public Class configuration
     'Data Source = '" & My.Settings.Dbserver & "';Initial File Name="";Server SPN=""")
 
 
+    Public connection As New SqlConnection("server = '" & My.Settings.Server & "'; User = '" & My.Settings.Username & "' ;
+            Password = '" & My.Settings.password & "';  Database = '" & My.Settings.Data & "' ")
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
         My.Settings.Server = ServerName.Text
@@ -14,12 +16,6 @@ Public Class configuration
         My.Settings.Username = user.Text
         My.Settings.password = pass.Text
 
-
-
-
-        My.Settings.Save()
-
-        My.Settings.Reload()
 
         Try
             connection.Open()
@@ -35,6 +31,18 @@ Public Class configuration
 
     End Sub
 
-    Public connection As New SqlConnection("server = '" & My.Settings.Server & "'; User = '" & My.Settings.Username & "' ;Password = '" & My.Settings.password & "'; 
-                                    Database = '" & My.Settings.Data & "' ")
+
+    Private Sub SimpleButton2_Click(sender As Object, e As EventArgs) Handles SimpleButton2.Click
+        My.Settings.Server = ServerName.Text
+        My.Settings.Data = database.Text
+        My.Settings.Username = user.Text
+        My.Settings.password = pass.Text
+
+
+
+
+        My.Settings.Save()
+
+        My.Settings.Reload()
+    End Sub
 End Class

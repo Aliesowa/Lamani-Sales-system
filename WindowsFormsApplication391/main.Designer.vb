@@ -87,6 +87,7 @@
             Me.AccordionControlElement16 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
             Me.AccordionControlElement20 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
             Me.AccordionControlElement21 = New DevExpress.XtraBars.Navigation.AccordionControlElement()
+            Me.SnapControl1 = New DevExpress.Snap.SnapControl()
             CType(Me.accordionControl1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.RibbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.RepositoryItemSearchLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,6 +95,7 @@
             CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.NavigationFrame1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.NavigationFrame1.SuspendLayout()
+            Me.NavigationPage10.SuspendLayout()
             Me.SuspendLayout()
             '
             'accordionControl1
@@ -490,6 +492,7 @@
             '
             'NavigationPage10
             '
+            Me.NavigationPage10.Controls.Add(Me.SnapControl1)
             Me.NavigationPage10.Name = "NavigationPage10"
             Me.NavigationPage10.Size = New System.Drawing.Size(1132, 561)
             '
@@ -539,6 +542,18 @@
             Me.AccordionControlElement21.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item
             Me.AccordionControlElement21.Text = "Reports"
             '
+            'SnapControl1
+            '
+            Me.SnapControl1.Dock = System.Windows.Forms.DockStyle.Fill
+            Me.SnapControl1.LayoutUnit = DevExpress.XtraRichEdit.DocumentLayoutUnit.Twip
+            Me.SnapControl1.Location = New System.Drawing.Point(0, 0)
+            Me.SnapControl1.MenuManager = Me.RibbonControl1
+            Me.SnapControl1.Name = "SnapControl1"
+            Me.SnapControl1.Options.SnapMailMergeVisualOptions.DataSourceName = Nothing
+            Me.SnapControl1.Size = New System.Drawing.Size(1132, 561)
+            Me.SnapControl1.TabIndex = 0
+            Me.SnapControl1.Text = "SnapControl1"
+            '
             'Form1
             '
             Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -562,6 +577,7 @@
             CType(Me.RepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).EndInit()
             CType(Me.NavigationFrame1, System.ComponentModel.ISupportInitialize).EndInit()
             Me.NavigationFrame1.ResumeLayout(False)
+            Me.NavigationPage10.ResumeLayout(False)
             Me.ResumeLayout(False)
             Me.PerformLayout()
 
@@ -631,6 +647,7 @@
         Friend WithEvents NavigationPage10 As DevExpress.XtraBars.Navigation.NavigationPage
         Friend WithEvents AccordionControlElement22 As DevExpress.XtraBars.Navigation.AccordionControlElement
         Friend WithEvents BarButtonItem1 As DevExpress.XtraBars.BarButtonItem
+        Friend WithEvents SnapControl1 As DevExpress.Snap.SnapControl
     End Class
 End Namespace
 

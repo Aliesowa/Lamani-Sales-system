@@ -29,6 +29,7 @@ Partial Class configuration
         Me.user = New System.Windows.Forms.TextBox()
         Me.database = New System.Windows.Forms.TextBox()
         Me.ServerName = New System.Windows.Forms.TextBox()
+        Me.SimpleButton2 = New DevExpress.XtraEditors.SimpleButton()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
@@ -60,6 +61,7 @@ Partial Class configuration
         Me.GroupControl1.Controls.Add(Me.user)
         Me.GroupControl1.Controls.Add(Me.database)
         Me.GroupControl1.Controls.Add(Me.ServerName)
+        Me.GroupControl1.Controls.Add(Me.SimpleButton2)
         Me.GroupControl1.Controls.Add(Me.SimpleButton1)
         Me.GroupControl1.Controls.Add(Me.LabelControl4)
         Me.GroupControl1.Controls.Add(Me.LabelControl3)
@@ -116,14 +118,25 @@ Partial Class configuration
         Me.ServerName.TabIndex = 3
         Me.ServerName.Text = Global.Settings.Default.Server
         '
+        'SimpleButton2
+        '
+        Me.SimpleButton2.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SimpleButton2.Appearance.Options.UseFont = True
+        Me.SimpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003
+        Me.SimpleButton2.Location = New System.Drawing.Point(192, 238)
+        Me.SimpleButton2.Name = "SimpleButton2"
+        Me.SimpleButton2.Size = New System.Drawing.Size(108, 26)
+        Me.SimpleButton2.TabIndex = 2
+        Me.SimpleButton2.Text = "Save"
+        '
         'SimpleButton1
         '
         Me.SimpleButton1.Appearance.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SimpleButton1.Appearance.Options.UseFont = True
         Me.SimpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003
-        Me.SimpleButton1.Location = New System.Drawing.Point(122, 240)
+        Me.SimpleButton1.Location = New System.Drawing.Point(35, 238)
         Me.SimpleButton1.Name = "SimpleButton1"
-        Me.SimpleButton1.Size = New System.Drawing.Size(140, 41)
+        Me.SimpleButton1.Size = New System.Drawing.Size(108, 26)
         Me.SimpleButton1.TabIndex = 2
         Me.SimpleButton1.Text = "Test Connection"
         '
@@ -199,4 +212,5 @@ Partial Class configuration
     Friend WithEvents user As TextBox
     Friend WithEvents database As TextBox
     Friend WithEvents ServerName As TextBox
+    Friend WithEvents SimpleButton2 As DevExpress.XtraEditors.SimpleButton
 End Class
